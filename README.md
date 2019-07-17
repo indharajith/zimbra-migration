@@ -5,8 +5,8 @@ If you want to migrate your zimbra server this scripts will help you.
 
 This repo have two scripts one for backup your zimbra datas(Phase-1) and one for restore the zimbra datas(Phase-2)
 
-**bachkup.sh script backup zimbra datas like**
-
+### Features
+**The bachkup.sh script backup zimbra datas like**
 - Domains
 - Admin Account
 - Email Account and Passwords
@@ -55,4 +55,5 @@ Step 5: Verify your data
 
 ## Table of contents
 
-- Backup(#Phase-1--Backup)
+- [Datas to be backup](#Features)
+- [Backup](#Phase-1--Backup)
