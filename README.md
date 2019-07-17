@@ -66,7 +66,7 @@ sync your data from old server to new server with same permission
 >From your new server
 
 ```bash
-		rsync -apv -e ssh root@backup_server_ip:path_to_backup_folder /new_server_path
+	rsync -apv -e ssh root@backup_server_ip:path_to_backup_folder /new_server_path
 ```
 		For e.g:- 
 		old server ip=192.168.1.100
@@ -74,7 +74,7 @@ sync your data from old server to new server with same permission
 		New server data folder=/migrate
 		
 ```bash
-		rsync -apv -e ssh root@192.168.1.100:/migrate /migrate
+	rsync -apv -e ssh root@192.168.1.100:/migrate /migrate
 ```
 It will sync your data from old server to new server
 	
@@ -85,16 +85,16 @@ Step 1: Enter in to your synced folder
 		For e.g:- My folder is /migrate then
 		
 ```bash
-		su - zimbra
-		cd /migrate
-		wget https://raw.githubusercontent.com/indharajith/zimbra_backup_restore/master/restore.sh
+	su - zimbra
+	cd /migrate
+	wget https://raw.githubusercontent.com/indharajith/zimbra_backup_restore/master/restore.sh
 ```
 
 Step 2: Define folder having datas in script
 
 ```bash
-        vim backup.sh
-        BackupFolder=/migration #change as per yours
+    vim backup.sh
+    BackupFolder=/migration #change as per yours
 ```
 
 Step 3: Add execution permission and run
