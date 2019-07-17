@@ -2,7 +2,11 @@
 one for backup and one for restore
 
 
-This script backup zimbra datas like 
+**This script backup zimbra datas like**
+-Domains
+-Admin Account
+-Email accoount
+
 
 
 
