@@ -6,8 +6,12 @@ one for backup and one for restore
 
 - Domains
 - Admin Account
-- Email accoount
-
+- Email Account and Passwords
+- Distribution Lists and Members
+- Alias
+- Signatures
+- Filter
+- Mailbox data
 
 
 
