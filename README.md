@@ -3,9 +3,10 @@ one for backup and one for restore
 
 
 **This script backup zimbra datas like**
--Domains
--Admin Account
--Email accoount
+
+- Domains
+- Admin Account
+- Email accoount
 
 
 
