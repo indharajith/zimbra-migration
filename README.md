@@ -43,3 +43,4 @@ Step 4: Add execution permission and run
         chmod +x backup.sh
         ./backup.sh
 ```
+Step 5: Verify your data
