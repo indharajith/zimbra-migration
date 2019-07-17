@@ -7,11 +7,13 @@ If you want to migrate your zimbra server this scripts will help you.
 
 - [Datas to be backup](#Features)
 - [Backup](#Phase-1--Backup)
+- [Migrate Data](#Rsync)
+- [Restore](#Phase-2--Restore)
 
 This repo have two scripts one for backup your zimbra datas(Phase-1) and one for restore the zimbra datas(Phase-2)
 
 ### Features
-**The bachkup.sh script backup zimbra datas like**
+**The backup.sh script backup zimbra datas like**
 - Domains
 - Admin Account
 - Email Account and Passwords
@@ -55,6 +57,54 @@ Step 4: Add execution permission and run
         ./backup.sh
 ```
 Step 5: Verify your data
+
+
+## Rsync
+
+sync your data from old server to new server with same permission
+
+>From your new server
+
+```bash
+		rsync -apv -e ssh root@backup_server_ip:path_to_backup_folder /new_server_path
+```
+		For e.g:- 
+		old server ip=192.168.1.100
+		old server backup_data folder=/migrate
+		New server data folder=/migrate
+		
+```bash
+		rsync -apv -e ssh root@192.168.1.100:/migrate /migrate
+```
+It will sync your data from old server to new server
+	
+
+## Phase-2  Restore
+
+Step 1: Enter in to your synced folder
+		For e.g:- My folder is /migrate then
+		
+```bash
+		su - zimbra
+		cd /migrate
+		wget https://raw.githubusercontent.com/indharajith/zimbra_backup_restore/master/restore.sh
+```
+
+Step 2: Define folder having datas in script
+
+```bash
+        vim backup.sh
+        BackupFolder=/migration #change as per yours
+```
+
+Step 3: Add execution permission and run
+
+```bash
+        chmod +x backup.sh
+        ./restore.sh
+```
+
+
 
 
 
