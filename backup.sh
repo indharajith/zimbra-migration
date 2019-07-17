@@ -119,6 +119,8 @@ done
 
 mkdir $BackupFolder/maildata;
 
+echo "Backuping all mailboxes. Kindly check $BackupFolder/finished.txt for finished mailboxes";
+
 for email in `cat $BackupFolder/emails.txt`;
 do  
 /opt/zimbra/bin/zmmailbox -z -m $email getRestURL '/?fmt=tgz' > $BackupFolder/maildata/$email.tgz ;  
