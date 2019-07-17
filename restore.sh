@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 BackupFolder=
 
 #Checking for zimbra user
@@ -13,7 +12,6 @@ exit 1;
 fi
 
 cd $BackupFolder;
-
 
 #Restoring domains
 
@@ -41,7 +39,6 @@ zmprov ca $i poiuytrewq cn "$givenName" displayName "$displayName" givenName "$g
 zmprov ma $i userPassword "$shadowpass";
 done
 
-
 #Restoring Admin accounts
 
 echo "Restoring Admin accounts";
@@ -52,7 +49,6 @@ echo "changing $i account type";
 zmprov ma $i zimbraIsAdminAccount TRUE;
 done;
 
-
 #Restoring DL
 
 echo "Restoring DL";
@@ -62,7 +58,6 @@ do
 zmprov cdl $i ; 
 echo "$i -- done "; 
 done
-
 
 #DL members
 
@@ -107,7 +102,6 @@ for i in `cat $BackupFolder/emails.txt`; do
 	rm -rf /tmp/firmaid;
 	echo $i "done!";
 done
-
 
 # Restoring Filters
 
