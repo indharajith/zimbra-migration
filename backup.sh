@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BackupFolder=/backups/zmigrate
+BackupFolder=
 
 #Checking for zimbra user
 USER=`whoami`
