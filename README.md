@@ -2,6 +2,10 @@
 one for backup and one for restore
 
 
+## Phase 1   Backup all your data by following steps
+
+**Login to old server as superuser privileges and follow the steps**
+
 **This script backup zimbra datas like**
 
 - Domains
