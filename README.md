@@ -16,7 +16,7 @@ This repo have two scripts one for backup your zimbra datas(Phase-1) and one for
 - Filter
 - Mailbox data
 
-## Phase-1   
+## Phase-1  Backup 
 >Backup all your data by following steps
 
 **Login to old server as superuser privileges and follow the steps**
@@ -25,9 +25,9 @@ Step 1: Create a folder to save backups and Change owner of the folder to zimbra
         for e.g:- my backupfolder is /migration
         
  ```bash 
-        mkdir /migration
-        chown -R zimbra.zimbra /migration
-        cd /migration
+        sudo mkdir /migration
+        sudo chown -R zimbra.zimbra /migration
+        sudo cd /migration
 ```
 
 Step 2: Download the Backup script
@@ -50,3 +50,9 @@ Step 4: Add execution permission and run
         ./backup.sh
 ```
 Step 5: Verify your data
+
+
+
+## Table of contents
+
+- Backup
