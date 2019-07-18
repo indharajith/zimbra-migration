@@ -102,7 +102,7 @@ Step 2: Define folder having datas in script
 Step 3: Add execution permission and run
 
 ```bash
-        chmod +x backup.sh
+        chmod +x restore.sh
         ./restore.sh
 ```
 
