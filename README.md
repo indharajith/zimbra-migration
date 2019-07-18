@@ -76,7 +76,7 @@ New server data folder=/migration
 ```bash
 	sudo mkdir /migration
 	sudo chown -R zimbra.zimbra /migration
-	rsync -apv -e 'ssh -p 22' root@192.168.1.100:/migration /migration
+	rsync -apv -e 'ssh -p 22' root@192.168.1.100:/migration /
 ```
 It will sync your data from old server to new server
 	
