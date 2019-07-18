@@ -29,8 +29,7 @@ This repo have two scripts one for backup your zimbra datas(Phase-1) and one for
 **Login to old server as superuser privileges and follow the steps**
 
 Step 1: Create a folder to save backups and Change owner of the folder to zimbra
-        
-		for e.g:- my backupfolder is /migration        
+        for e.g:- my backupfolder is /migration        
  ```bash 
         sudo mkdir /migration
         sudo chown -R zimbra.zimbra /migration
