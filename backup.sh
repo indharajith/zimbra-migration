@@ -49,9 +49,10 @@ mkdir $BackupFolder/userpass;
 
 echo "getting all user password";
 
-for i in `cat emails.txt`;
+for i in `cat $BackupFolder/emails.txt`;
 do
 zmprov  -l ga $i userPassword | grep userPassword: | awk '{ print $2}' > $BackupFolder/userpass/$i.shadow;
+echo "getting password for $i";
 done
 
 
@@ -66,6 +67,7 @@ echo "getting all userdata";
 for i in `cat $BackupFolder/emails.txt`;
 do
 zmprov ga $i  | grep -i Name: > $BackupFolder/userdata/$i.txt ;
+echo "getting userdata for $i";
 done
 
 
@@ -78,7 +80,7 @@ echo "getting all alias";
 for i in `cat $BackupFolder/emails.txt`;
 do
 zmprov ga  $i | grep zimbraMailAlias |awk '{print $2}' > $BackupFolder/alias/$i.txt ;
-echo $i ;
+echo "getting alias for $i";
 done
 
 find $BackupFolder/alias/ -type f -empty | xargs -n1 rm -v;
@@ -112,7 +114,7 @@ for i in `cat $BackupFolder/emails.txt`; do
     sed -i -e "1d" /tmp/filter
     sed 's/zimbraMailSieveScript: //g' /tmp/filter  > $BackupFolder/filter/$i.filter
     rm -f /tmp/filter
-    echo "Filter  downloaded for .... $i"
+    echo "getting filter for $i"
 done
 
 #backuping all email accounts
