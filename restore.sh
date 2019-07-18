@@ -120,7 +120,7 @@ echo "Restoring Mailbox";
 
 for i in `cat $/BackupFolder/emails.txt`; 
 do 
-/opt/zimbra/bin/zmmailbox -z -m $i postRestURL "/?fmt=tgz&resolve=skip" $BackupFolder/$i.tgz ;  
+/opt/zimbra/bin/zmmailbox -z -m $i postRestURL "/?fmt=tgz&resolve=skip" $BackupFolder/maildata/$i.tgz;  
 echo "$i -- finished "; 
 done
 
