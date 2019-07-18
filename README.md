@@ -95,7 +95,7 @@ Step 1: Enter in to your synced folder
 Step 2: Define folder having datas in script
 
 ```bash
-    	vim backup.sh
+    	vim restore.sh
     	BackupFolder=/migration #change as per yours
 ```
 
