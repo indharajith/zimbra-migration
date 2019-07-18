@@ -125,6 +125,7 @@ echo "Backuping all mailboxes. Kindly check $BackupFolder/finished.txt for finis
 
 for email in `cat $BackupFolder/emails.txt`;
 do  
+echo "Processing $i";
 /opt/zimbra/bin/zmmailbox -z -m $email getRestURL '/?fmt=tgz' > $BackupFolder/maildata/$email.tgz ;  
 echo "$email is completed" >> $BackupFolder/finished.txt; 
 done
