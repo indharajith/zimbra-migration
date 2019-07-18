@@ -70,13 +70,13 @@ sync your data from old server to new server with same permission
 For e.g:- 
 old server ip=192.168.1.100  
 old server ssh port=22  
-old server backup_data folder=/migrate  
-New server data folder=/migrate  
+old server backup_data folder=/migration  
+New server data folder=/migration  
 		
 ```bash
-	sudo mkdir /migrate
-	sudo chown -R zimbra.zimbra /migrate
-	rsync -apv -e 'ssh -p 22' root@192.168.1.100:/migrate /migrate
+	sudo mkdir /migration
+	sudo chown -R zimbra.zimbra /migration
+	rsync -apv -e 'ssh -p 22' root@192.168.1.100:/migration /migration
 ```
 It will sync your data from old server to new server
 	
@@ -84,11 +84,11 @@ It will sync your data from old server to new server
 ## Phase-2  Restore
 
 Step 1: Enter in to your synced folder
-	For e.g:- My folder is /migrate then
+	For e.g:- My folder is /migration then
 		
 ```bash
 	su - zimbra
-	cd /migrate
+	cd /migration
 	wget https://raw.githubusercontent.com/indharajith/zimbra_backup_restore/master/restore.sh
 ```
 
