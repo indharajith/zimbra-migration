@@ -6,9 +6,11 @@ If you want to migrate your zimbra server this scripts will help you.
 ## Table of contents
 
 - [Datas to be backup](#Features)
+- [Usage](#Usage)
 - [Backup](#Phase-1--Backup)
 - [Migrate Data](#Rsync)
-- [Restore](#Phase-2--Restore)
+- [Restore](#Phase-2--Restore)  
+- [Conclusion](#Conclusion)
 
 This repo have two scripts one for backup your zimbra datas(Phase-1) and one for restore the zimbra datas(Phase-2)
 
@@ -22,6 +24,8 @@ This repo have two scripts one for backup your zimbra datas(Phase-1) and one for
 - Signatures
 - Filter
 - Mailbox data
+
+### Usage  
 
 ## Phase-1  Backup 
 >Backup all your data by following steps
@@ -106,7 +110,13 @@ Step 3: Add execution permission and run
         ./restore.sh
 ```
 
-Step 4: Check the restored datas
+Step 4: Check the restored datas  
+
+## Conclusion  
+
+Finally all your datas are successfully restored from old server to new server
+
+
 
 
 
