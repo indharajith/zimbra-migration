@@ -115,6 +115,7 @@ Step 4: Check the restored datas
 ## Conclusion  
 
 Finally all your datas are successfully restored from old server to new server
+Note: Use screen command for large datas
 
 
 
