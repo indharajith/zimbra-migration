@@ -5,6 +5,7 @@ If you want to migrate your zimbra server this scripts will help you.
 
 ## Table of contents
 
+- [Prerequisite](#Prerequisite)
 - [Datas to be backup](#Features)
 - [Usage](#Usage)
 - [Backup](#Phase-1--Backup)
@@ -13,6 +14,12 @@ If you want to migrate your zimbra server this scripts will help you.
 - [Conclusion](#Conclusion)
 
 This repo have two scripts one for backup your zimbra datas(Phase-1) and one for restore the zimbra datas(Phase-2)
+
+## Prerequisite  
+
+- Storage spaces for backup the datas.
+- External Storage for large data migration(mounted as local folder).
+- SSH access for both servers. 
 
 ## Features
 **The backup.sh script backup zimbra datas like**
