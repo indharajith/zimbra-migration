@@ -106,6 +106,8 @@ Step 3: Add execution permission and run
         ./restore.sh
 ```
 
+Step 4: Check the restored datas
+
 
 
 
